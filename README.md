@@ -4,7 +4,7 @@ Subflix is Chrome extension that shows you definitions of selected subtitles on 
 Using following dictionaries:
 * [Urban Dictionary](https://urbandictionary.com)
 * [Pearson Dictionary](https://www.ldoceonline.com/)
-* [Google Translate soon](https://google.com/translate)
+* [~~Google Translate~~](https://google.com/translate) (Coming soon)
 ## Installation
 1. Download latest [source code zip package](https://github.com/micorix/subflix/archive/0.0.1.zip) from [releases page](https://github.com/micorix/subflix/releases)
 2. In your [Chrome Browser](https://chrome.com) go to `chrome://extensions`
