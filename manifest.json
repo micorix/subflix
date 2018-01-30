@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+
+  "name": "Subflix",
+  "description": "Translation lookup for Netflix",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["http://www.netflix.com/watch/*", "https://www.netflix.com/watch/*"],
+      "css": ["css/styles.css"],
+      "js": ["js/ajax.js", "js/ready.js", "js/scripts.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": [
+   "tabs", "http://www.netflix.com/watch/*", "https://www.netflix.com/watch/*",
+   "https://api.urbandictionary.com/*", "https://api.pearson.com/*"
+ ]
+}
