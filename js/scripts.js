@@ -24,6 +24,7 @@ ready('.playback-advisories-container-node', el => {
   el.remove();
 });
 ready('.player-timedtext', (el) => {
+  setupUI();
   let wordsObserver = new MutationObserver(handleMutations);
   wordsObserver.observe(el, {
     attributes: true,
@@ -31,7 +32,7 @@ ready('.player-timedtext', (el) => {
     subtree: true
   });
 });
-ready('.player-control-bar', setupUI);
+
 function setupStorage(){
   if(!localStorage.subflix){
   localStorage.subflix = JSON.stringify({
@@ -57,7 +58,14 @@ function setupUI() {
   settingsLink.className = 'subflix-settings-link';
   settingsLink.innerHTML = 'Subflix settings';
   settingsLink.addEventListener('click', openSettings);
-  document.querySelector('.player-controls-wrapper').appendChild(settingsLink);
+  if(document.querySelector('.player-controls-wrapper')){
+      document.querySelector('.player-controls-wrapper').appendChild(settingsLink);
+  }else if(document.querySelector('.PlayerControls--button-control-row')){
+    document.querySelector('.PlayerControls--button-control-row').appendChild(settingsLink);
+  }else{
+    console.log('Cannot place settings');
+  }
+
 
   let definition = document.createElement('div');
   definition.className = 'subflix-definition';

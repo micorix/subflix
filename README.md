@@ -9,7 +9,7 @@ using following dictionaries:
 2. Unzip package
 3. In your [Chrome browser](https://chrome.com) go to `chrome://extensions`
 4. Unable developer mode
-5. Upload downloaded zip by `Load unpacked extension`
+5. Upload child directory of downloaded zip by `Load unpacked extension`
 6. Done!
 
 ## Warning! You have to refresh Netflix video page (for each video) before starting using Subflix
