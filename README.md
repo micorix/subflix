@@ -1,5 +1,5 @@
 # Subflix
-Subflix is Chrome extension that shows you definitions of selected subtitles on [https://netflix.com](Netflix).
+Subflix is Chrome extension that shows you definitions of selected subtitles on [Netflix](https://netflix.com).
 
 ## Installation
 1. Download latest [source code zip package](https://github.com/micorix/subflix/archive/0.0.1.zip) from [releases page](https://github.com/micorix/subflix/releases)
