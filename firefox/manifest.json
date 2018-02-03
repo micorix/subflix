@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "Subflix",
+  "description": "Translation lookup for Netflix",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["http://www.netflix.com/watch/*", "https://www.netflix.com/watch/*"],
+      "css": ["../shared/css/styles.css"],
+      "js": ["../shared/js/ready.js", "../shared/js/main.js", "js/new-player.js", "js/legacy-player.js", "js/main.js"]
+    }
+  ]
+}

@@ -9,7 +9,7 @@
     {
       "matches": ["http://www.netflix.com/watch/*", "https://www.netflix.com/watch/*"],
       "css": ["css/styles.css"],
-      "js": ["js/ajax.js", "js/ready.js", "js/scripts.js"],
+      "js": ["js/ready.js", "js/scripts.js"],
       "run_at": "document_end"
     }
   ],

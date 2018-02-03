@@ -1,14 +1,4 @@
 
-const subtitlesWrapper = document.querySelector('.player-timedtext');
-
-(function(win) {
-    'use strict';
-
-    var listeners = [],
-    doc = win.document,
-    MutationObserver = win.MutationObserver || win.WebKitMutationObserver,
-    observer;
-
     function ready(selector, fn) {
         // Store the selector and callback to be monitored
         listeners.push({
@@ -45,21 +35,3 @@ const subtitlesWrapper = document.querySelector('.player-timedtext');
             }
         }
     }
-
-    // Expose `ready`
-    win.ready = ready;
-
-})(this);
-
-
-
-
-
-
-// [].forEach.call(document.querySelectorAll('.sfl-sub-word'), function(word) {
-//   // do whatever
-//   console.log('word');
-//   word.addEventListener('click', e => {
-//     alert(e.target.innerHTML);
-//   })
-// });
